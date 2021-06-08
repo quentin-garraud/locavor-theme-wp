@@ -1,0 +1,90 @@
+section.shop-section {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: $primary-color-light;
+
+  h2.shop-section__heading {
+    margin: 10px 0;
+  }
+
+  div.shop-section__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  div.shop-section__items {
+    margin: 10px 0;
+    div.shop-section__item {
+      flex-basis: 100%;
+      margin: 50px 0;
+      h3.shop-section__item__product {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      span.shop-section__item__price {
+        font-size: 36px;
+        font-family: $heading;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  section.shop-section {
+    div.shop-section__items {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      div.shop-section__item {
+        flex-basis: 45%;
+      }
+    }
+  }
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  section.shop-section {
+    div.shop-section__items {
+      div.shop-section__item {
+        flex-basis: 30%;
+      }
+    }
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  section.shop-section {
+    padding: 10vh;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  section.shop-section {
+    div.shop-section__items {
+      justify-content: last start;
+      div.shop-section__item {
+        flex-basis: 23%;
+      }
+    }
+    div.shop-section__button-wrapper {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  section.shop-section {
+    padding: 10vh 30vh;
+  }
+}

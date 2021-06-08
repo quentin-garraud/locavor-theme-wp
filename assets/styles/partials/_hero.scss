@@ -1,0 +1,67 @@
+section.hero-section {
+  padding: 0 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-image: url("/wp-content/themes/locavor/assets/img/background-image.jpg");
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1.hero-section__title {
+    font-size: 70px;
+    line-height: 60px;
+    color: $primary-color-light;
+  }
+  p.hero-section__paragraph {
+    margin: 20px 0;
+    color: $primary-color-light;
+  }
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  section.hero-section {
+    h1.hero-section__title {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  section.hero-section {
+    padding: 10vh;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  section.hero-section {
+    h1.hero-section__title {
+      width: 50%;
+    }
+    p.hero-section__paragraph {
+      width: 60%;
+    }
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  section.hero-section {
+    padding: 0 30vh;
+    h1.hero-section__title {
+      width: 40%;
+    }
+    p.hero-section__paragraph {
+      width: 40%;
+    }
+  }
+}

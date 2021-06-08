@@ -1,0 +1,87 @@
+body {
+  background-color: $primary-color-light;
+}
+::selection {
+  background-color: darken($primary-color-light, 10%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading;
+  color: $primary-color-dark;
+}
+h1 {
+  font-size: $h1-font-size-mobile;
+  line-height: 37px;
+}
+h2 {
+  font-size: $h2-font-size-mobile;
+  line-height: 26px;
+}
+h3 {
+  font-size: $h3-font-size-mobile;
+  line-height: 26px;
+}
+p {
+  line-height: 18px;
+  font-size: $body-font-size-mobile;
+  color: $primary-color-dark;
+  font-family: $body-light;
+}
+a {
+  font-size: $link-font-size-mobile;
+  line-height: 18px;
+  font-family: $body-light;
+  color: $primary-color-dark;
+}
+span {
+  font-size: 10px;
+  line-height: 18px;
+  color: $primary-color-dark;
+  font-family: $body-light;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: $h1-font-size-desktop;
+    line-height: 37px;
+  }
+  h2 {
+    font-size: $h2-font-size-desktop;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: $h3-font-size-desktop;
+    line-height: 22px;
+  }
+  p {
+    font-size: $body-font-size-desktop;
+    line-height: 22px;
+  }
+  a {
+    font-size: $link-font-size-desktop;
+  }
+}
+
+a.button {
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-family: $heading;
+}
+a.button-light {
+  border: $border-light;
+  color: $primary-color-light;
+}
+a.button-dark {
+  border: $border-dark;
+  color: $primary-color-dark;
+}

@@ -1,0 +1,38 @@
+////// Déclaration des couleurs //////
+$primary-color-dark: #000000;
+$primary-color-dark-green: #02372a;
+$primary-color-light-beige: #feefe5;
+$primary-color-light: #f5f5f5;
+$border-light: 1px solid $primary-color-light;
+$border-dark: 1px solid $primary-color-dark;
+
+////// Déclaration des fonts //////
+
+// Heading
+$heading: "New York", serif;
+
+// Body
+$body-light: "Poppins Light", Arial, sans-serif;
+$body-bold: "Poppins Bold", Arial, sans-serif;
+
+////// Déclaration des tailles //////
+$h1-font-size-desktop: 64px;
+$h2-font-size-desktop: 48px;
+$h3-font-size-desktop: 36px;
+$h4-font-size-desktop: 16px;
+
+$h1-font-size-mobile: 36px;
+$h2-font-size-mobile: 27px;
+$h3-font-size-mobile: 18px;
+$h4-font-size-mobile: 16rem;
+
+$body-font-size-desktop: 18px;
+$body-font-size-mobile: 16px;
+
+$caption-font-size-desktop: 0.875rem;
+$caption-font-size-mobile: 0.75rem;
+
+$link-font-size-desktop: 18px;
+$link-font-size-mobile: 16px;
+
+$transition: 0.4s;
