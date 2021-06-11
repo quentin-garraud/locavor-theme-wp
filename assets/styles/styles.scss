@@ -10,5 +10,8 @@
 @import "partials/hero";
 @import "partials/about";
 @import "partials/shop-home";
-@import "partials/product/product";
 
+
+@import "partials/woocommerce/single-product";
+@import "partials/woocommerce/archive-product";
+@import "partials/woocommerce/panier";

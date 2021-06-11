@@ -28,6 +28,7 @@ function locavor_register_assets()
 
 register_nav_menus([
   "main" => "Menu Principal",
+  "woocommerce" => "Menu Woocommerce",
   "footer-info" => "Footer info",
   "footer-legal" => "Footer legal",
 ]);
@@ -109,3 +110,11 @@ add_theme_support("wc-product-gallery-lightbox");
 add_theme_support("wc-product-gallery-slider");
 
 add_filter("woocommerce_enqueue_styles", "__return_false");
+
+add_action( 'after_setup_theme', 'locavor_theme_woocommerce_setup' );
+
+function locavor_theme_woocommerce_setup() {
+   add_theme_support( 'wc-product-gallery-zoom' );
+   add_theme_support( 'wc-product-gallery-lightbox' );
+   add_theme_support( 'wc-product-gallery-slider' );
+}

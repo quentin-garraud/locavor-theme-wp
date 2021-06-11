@@ -44,10 +44,6 @@ span {
   color: $primary-color-dark;
   font-family: $body-light;
 }
-img {
-  max-width: 100%;
-  width: 100%;
-}
 @media screen and (min-width: 600px) {
   h1 {
     font-size: $h1-font-size-desktop;
