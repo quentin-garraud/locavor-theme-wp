@@ -1,18 +1,9 @@
-$container-padding: 20px;
-$container-width: calc(100vw - #{$container-padding} * 2);
-
-
 section.hero-section {
-  // padding: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-content: center;
-  width: 100%;
-  padding-left: calc(50% - #{$container-width}/2);
-  padding-right: calc(50% - #{$container-width}/2);
-
-
 
   div.hero-section-heading{
     display: flex;

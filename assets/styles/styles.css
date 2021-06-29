@@ -429,6 +429,7 @@ footer.footer p.footer-copyright {
 }
 
 section.hero-section {
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,9 +442,6 @@ section.hero-section {
           justify-content: space-evenly;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 100%;
-  padding-left: calc(50% - calc(100vw - 20px * 2)/2);
-  padding-right: calc(50% - calc(100vw - 20px * 2)/2);
 }
 
 section.hero-section div.hero-section-heading {
