@@ -429,8 +429,24 @@ footer.footer p.footer-copyright {
 }
 
 section.hero-section {
-  padding: 0 20px;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  padding-left: calc(50% - calc(100vw - 20px * 2)/2);
+  padding-right: calc(50% - calc(100vw - 20px * 2)/2);
+}
+
+section.hero-section div.hero-section-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,28 +457,136 @@ section.hero-section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-image: url("/wp-content/themes/locavor/assets/img/background-image.jpg");
-  background-position: start;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-section.hero-section h1.hero-section__title {
+section.hero-section div.hero-section-heading h1.hero-section__title {
   font-size: 70px;
   line-height: 60px;
-  color: #f5f5f5;
+  color: #000000;
+  text-align: center;
 }
 
-section.hero-section p.hero-section__paragraph {
+section.hero-section div.hero-section-heading p.hero-section__paragraph {
+  text-align: center;
   margin: 20px 0;
-  color: #f5f5f5;
+  color: #000000;
+}
+
+section.hero-section div.hero-section-heading div.hero-section__button-wrapper {
+  text-align: center;
+}
+
+section.hero-section div.hero-section-discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+section.hero-section div.hero-section-discover h3.hero-section-discover__title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 10px 0;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item img.hero-section-discover-products__image {
+  width: 280px;
+  height: 167px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item a.hero-section-discover-products__title {
+  font-family: "New York", serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price {
+  margin-bottom: 20px;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price del span,
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price span.woocommerce-Price-amount bdi,
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price ins span {
+  font-family: "New York", serif;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price del span {
+  color: #4a0303;
+  font-size: 18px;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price ins {
+  text-decoration: none;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price ins span {
+  font-size: 27px;
+}
+
+section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item p.hero-section-discover-products__price span.woocommerce-Price-amount bdi {
+  font-size: 27px;
 }
 
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  section.hero-section h1.hero-section__title {
+  section.hero-section div.hero-section-heading h1.hero-section__title {
     font-size: 50px;
     line-height: 50px;
   }
@@ -474,6 +598,22 @@ section.hero-section p.hero-section__paragraph {
 
 @media (min-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  section.hero-section div.hero-section-discover div.hero-section-discover-products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 @media (min-width: 801px) {
@@ -485,24 +625,30 @@ section.hero-section p.hero-section__paragraph {
 
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
-  section.hero-section h1.hero-section__title {
-    width: 50%;
+  section.hero-section div.hero-section-heading h1.hero-section__title,
+  section.hero-section div.hero-section-heading p.hero-section__paragraph {
+    width: 50vw;
   }
-  section.hero-section p.hero-section__paragraph {
-    width: 60%;
+  section.hero-section div.hero-section-discover {
+    margin-top: 100px;
+  }
+  section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
   }
 }
 
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
-  section.hero-section {
-    padding: 0 30vh;
-  }
-  section.hero-section h1.hero-section__title {
+  section.hero-section div.hero-section-heading h1.hero-section__title {
     width: 30%;
   }
-  section.hero-section p.hero-section__paragraph {
-    width: 40%;
+  section.hero-section div.hero-section-heading p.hero-section__paragraph {
+    width: 50%;
+  }
+  section.hero-section div.hero-section-discover div.hero-section-discover-products div.hero-section-discover-products__item {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
   }
 }
 

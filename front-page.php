@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 <section class="hero-section">
-    <h1 class="hero-section__title">Votre producteur local en ligne.</h1>
+  <div class="hero-section-heading">
+    <h1 class="hero-section__title">Votre producteur local sur internet.</h1>
     <p class="hero-section__paragraph">
         Vous avez toujours révé de commander vos fruits et légumes sur internet
         ? Et bien en 2021 c'est chose faite. Retrouvez votre maraîcher préféré
@@ -10,7 +11,29 @@
     <div class="hero-section__button-wrapper">
         <a href="<?php echo home_url(
           "/"
-        ); ?>boutique/" class="button button-light">Découvrir</a>
+        ); ?>boutique/" class="button button-dark center">Découvrir</a>
+    </div>
+  </div>
+  <div class="hero-section-discover">
+    <h3 class="hero-section-discover__title">Ce qui vous attends :</h3>
+    <?php $the_query = new WP_Query( array(
+      'post_type' => 'product',
+      'posts_per_page' => '4'
+    ));?>
+
+<div class="hero-section-discover-products">
+    <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+      <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'single-post-thumbnail' );?>
+      <?php $product = wc_get_product( get_the_ID() ); /* get the WC_Product Object */ ?>
+      <div class="hero-section-discover-products__item">
+          <img class="hero-section-discover-products__image" src="<?php  echo $image[0]; ?>" data-id="<?php echo $loop->post->ID; ?>">
+          <a class="hero-section-discover-products__title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          <p class="hero-section-discover-products__price"><?php echo $product->get_price_html(); ?></p>
+        </div>
+        <?php endwhile; ?>   
+        <?php endif; ?>
+      </div>
     </div>
 </section>
 <section class="about-section">
